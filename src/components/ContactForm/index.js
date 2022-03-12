@@ -14,16 +14,16 @@ function DisplayContactForm(){
                 <div class="form-group">
         
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    
                 </div>
                 <div class="form-group">
                     
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password"/>
                 </div>
                 
                 <div class="form-group">
                     
-                    <textarea name="" id="" cols="80" rows="6" className="w-100"></textarea>
+                    <textarea name="" id="" cols="80" rows="6" className="w-100" placeholder="Enter your message"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

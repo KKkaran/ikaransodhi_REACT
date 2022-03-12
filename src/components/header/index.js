@@ -1,11 +1,17 @@
 import React from "react";
 import DisplayNavigation from "../../components/Nav"
-function DisplayHeader(){
+function DisplayHeader(props){
+    const {
+        categories,
+        setCurrentCategory,
+        currentCategory
+    } = props
     return(
-
         <>
-            
-            <DisplayNavigation/>
+            <DisplayNavigation 
+                categories={categories}
+                setCurrentCategory={setCurrentCategory}
+                currentCategory={currentCategory}/>
         </>
 
     )

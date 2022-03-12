@@ -10,7 +10,7 @@ function DisplayContactForm(){
             <p>Have a question or want to work together?</p>
             
             <div className="">
-            <form action="" class="form-container form-contact w-50 border border-dark p-2" style={{"margin":"auto"}}>
+            <form action="" class="form-container form-contact border border-dark p-md-5" style={{"margin":"auto"}}>
                 <div class="form-group">
         
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>

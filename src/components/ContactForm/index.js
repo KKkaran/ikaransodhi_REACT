@@ -7,7 +7,6 @@ function DisplayContactForm(){
     const { name, email, message } = formState;
     function handleSubmit(e){
         e.preventDefault();
-        console.log()
         console.log(formState)
         
     }
@@ -43,7 +42,7 @@ function DisplayContactForm(){
             }
         }
         if (!errorMessage) {
-            console.log("no error message")
+            console.log("Sending to server on click")
             setFormState({ ...formState, [e.target.name]: e.target.value });
         }
     }

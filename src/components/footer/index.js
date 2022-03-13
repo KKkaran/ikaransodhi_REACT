@@ -2,7 +2,9 @@ import React from "react";
 
 function DisplayFooter(){
     return (
-        <h2>This is Footer</h2>
+        <div className="p-1 bg-dark text-center">
+            <h2>This is Footers</h2>
+        </div>
     )
 }
 

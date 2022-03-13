@@ -7,19 +7,19 @@ function DisplayProject(){
         name:"Artificial Intelligence",
         link:"google.com"
     },{
-        name:"Blog",
+        name:"blog",
         link:"google.com"
     },{
         name:"Get-Fit",
         link:"google.com"
     },{
-        name:"Raspberry",
+        name:"raspberry",
         link:"google.com"
     },{
-        name:"RunBuddy",
+        name:"runbuddy",
         link:"google.com"
     },{
-        name:"SellQuicker",
+        name:"sellquicker",
         link:"google.com"
     }]
     return (

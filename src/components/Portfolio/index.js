@@ -1,9 +1,12 @@
 import React from "react";
+import DisplayProject from "../project";
 
 function DisplayPortfolio(){
-    <>
-        <h2>Portfolio Section bit</h2>
-    </>
+    return (
+        <>
+            <DisplayProject/>
+        </>
+    )
 }
 
 export default DisplayPortfolio

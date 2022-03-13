@@ -1,5 +1,5 @@
 import React from "react";
-import tc from "./tomcruise.png"
+import tc from "../../assets/tomcruise.png"
 function DisplayAbout(){
 
     return(

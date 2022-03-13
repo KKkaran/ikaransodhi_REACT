@@ -1,7 +1,7 @@
 import React from "react";
 import DisplayAbout from "../aboutme";
 import DisplayContactForm from "../ContactForm";
-
+import DisplayPortfolio from "../Portfolio";
 
 function DisplayMainSection(props){
 
@@ -12,7 +12,7 @@ function DisplayMainSection(props){
         )
     }else if(props.cc.name === "Portfolio"){
         return (
-            <>{props.cc.name}</>
+            <DisplayPortfolio/>
         )
     }else if(props.cc.name === "Resume"){
         return (

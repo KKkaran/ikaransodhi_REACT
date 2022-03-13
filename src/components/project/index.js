@@ -39,7 +39,7 @@ function DisplayProject(){
                             key={i}
                         />  
                         <div className="button p-2">
-                        <SocialIcon className="links1" url="https://github.com/jaketrent" />
+                        <SocialIcon className="links1" url="https://github.com/kkkaran" />
                             <a className="links2" href={p.link}>{p.name}</a>
                         </div>
                     </div>

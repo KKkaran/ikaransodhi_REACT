@@ -1,7 +1,52 @@
-import React from "react";
-
+import React, {useState} from "react";
+import {validateEmail} from "../../utils/helpers"
 function DisplayContactForm(){
 
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
+    function handleSubmit(e){
+        e.preventDefault();
+        console.log()
+        console.log(formState)
+        
+    }
+    function handleChange(e){
+        
+        //console.log(formState)
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            console.log(isValid);
+            // isValid conditional statement
+            if (!isValid) {
+                setErrorMessage('Your email is invalid.');
+              } else {
+                if (!e.target.value.length) {
+                    setErrorMessage(`${e.target.name} is required.`);
+                  } else {
+                    setErrorMessage('');
+                  }
+              }
+          }
+        if(e.target.name === "name"){
+            if(!e.target.value){
+                setErrorMessage(`${e.target.name} is required.`);
+            }else{
+                setErrorMessage("")
+            }
+        }
+        if(e.target.name === "message"){
+            if(!e.target.value){
+                setErrorMessage(`${e.target.name} is required.`);
+            }else{
+                setErrorMessage("")
+            }
+        }
+        if (!errorMessage) {
+            console.log("no error message")
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+        }
+    }
     return (
         <div className="border border-dark m-2 text-center">
             <article class="contact-flex-container" id="contact">
@@ -10,23 +55,28 @@ function DisplayContactForm(){
             <p>Have a question or want to work together?</p>
             
             <div className="">
-            <form action="" class="form-container form-contact border border-dark p-md-5" style={{"margin":"auto"}}>
+            <form action="" class="form-container form-contact border border-dark p-md-5" style={{"margin":"auto"}} onSubmit={handleSubmit}>
+            <div class="form-group">
+                    
+                    <input type="email" name="email" onBlur={handleChange} defaultValue={email} class="form-control" id="" placeholder="Enter your email" required/>
+                </div>
                 <div class="form-group">
         
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                    <input type="text" onBlur={handleChange}   name="name" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter your name" defaultValue={name} required/>
                     
                 </div>
-                <div class="form-group">
-                    
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password"/>
-                </div>
+                
                 
                 <div class="form-group">
                     
-                    <textarea name="" id="" cols="80" rows="6" className="w-100" placeholder="Enter your message"></textarea>
+                    <textarea name="message" onBlur={handleChange} id="" cols="80" defaultValue={message} rows="6" className="w-100" placeholder="Enter your message" required></textarea>
                 </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
+                {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+                )}
+                <input type="submit" class="btn btn-primary"/>
             </form>
             </div>
             

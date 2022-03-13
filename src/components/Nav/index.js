@@ -16,18 +16,18 @@ function DisplayNavigation(props){
     return (
         <div>
             {console.log(categories)}
-            <div className='navbar navbar-expand-lg bg-dark navbar-dark' >
+            <nav className='navbar navbar-expand-lg bg-dark navbar-dark' >
                 <h2 className='text-light'>Karan Sodhi</h2>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
+                <button class="navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navmenu">
                   <ul className='navbar-nav ml-auto'>
                       {
                         categories.map(cat=>(
-                          <li key={cat.name} className={`mx-2 navIn ${currentCategory.name === cat.name && 'navA'}`}
+                          <li key={cat.name} className={`mx-2 nav-item navIn ${currentCategory.name === cat.name && 'navA'}`}
                           >
-                            <span style={{"cursor":"pointer"}}
+                            <span className='' style={{"cursor":"pointer"}}
                             
                             onClick={() => {
                             setCurrentCategory(cat)
@@ -37,17 +37,10 @@ function DisplayNavigation(props){
                           </li>
                         ))
                       
-                      
-                      
-                      
-                      
-                      
-                      
-                      
                       }
                   </ul>
                 </div>
-            </div>
+            </nav>
         </div>
 
     )

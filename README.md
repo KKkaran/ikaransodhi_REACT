@@ -2,6 +2,7 @@
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
     <h2 id="description">Description</h2>
     <p><img src="src/assets/icons/search.png" height="18" width="20"/>In this we replicated the challenge 2 where we created a basic portfolio app using HTML and CSS. However, in this app, we achieved the same thing but we used a library called 'REACT'. It is single paged application where all different components are mounted to a single root component inside of index.html. I created multiple components that were reused hence promoting DRY code. This is the basic functionality of REACT. We break down the app into several components and then we render them. It makes our app use less resources and inturn makes it more efficient and faster.</p>
+LIVE LINK: <a href="https://kkkaran.github.io/ikaransodhi_REACT/">https://kkkaran.github.io/ikaransodhi_REACT/</a>
     <hr>
     <h2>Table of Contents</h2>
     <ul>

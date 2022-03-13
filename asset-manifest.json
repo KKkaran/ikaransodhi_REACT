@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ikaransodhi_REACT/static/css/main.073c9b0a.css",
+    "main.js": "/ikaransodhi_REACT/static/js/main.308fe07f.js",
+    "static/js/787.75096af7.chunk.js": "/ikaransodhi_REACT/static/js/787.75096af7.chunk.js",
+    "static/media/1.jpg": "/ikaransodhi_REACT/static/media/1.4154229876ae7d8f4e22.jpg",
+    "static/media/tomcruise.png": "/ikaransodhi_REACT/static/media/tomcruise.59988cc917a672278f4c.png",
+    "index.html": "/ikaransodhi_REACT/index.html",
+    "main.073c9b0a.css.map": "/ikaransodhi_REACT/static/css/main.073c9b0a.css.map",
+    "main.308fe07f.js.map": "/ikaransodhi_REACT/static/js/main.308fe07f.js.map",
+    "787.75096af7.chunk.js.map": "/ikaransodhi_REACT/static/js/787.75096af7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.308fe07f.js"
+  ]
+}

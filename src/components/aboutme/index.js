@@ -3,9 +3,9 @@ import tc from "../../assets/tomcruise.png"
 function DisplayAbout(){
 
     return(
-    <div className="border m-2 p-3">
+    <div className=" m-2 p-3">
         <h3>About Me</h3>
-        <div className="p-2 border ">
+        <div className="p-2  ">
             <img src={tc} height="250" width="200" alt="tomcruise" />
             <p className="abtmebio">With these points in mind, in this Challenge you’ll set 
             yourself up for future succesapplying the core skills

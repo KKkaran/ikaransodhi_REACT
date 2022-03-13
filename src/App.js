@@ -25,14 +25,16 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(()=>categories[0])
 
   return (
-    <div className="container border border-dark p-1">
-        <DisplayHeader 
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}/>
-        <main>
-          <DisplayMainSection cc={currentCategory}></DisplayMainSection>
-        </main>
+    <div className="container border border-dark p-1 d-flex flex-column" style={{"minHeight":"100vh"}}>
+        <div>
+          <DisplayHeader 
+            categories={categories}
+            setCurrentCategory={setCurrentCategory}
+            currentCategory={currentCategory}/>
+          <main>
+            <DisplayMainSection cc={currentCategory}></DisplayMainSection>
+          </main>
+          </div>
         <DisplayFooter/>
     </div>
   );

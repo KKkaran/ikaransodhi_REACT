@@ -55,6 +55,7 @@
         padding: 0;
         margin: 0;
       }
+      
       body{
         color: white;
         background-color: rgb(16, 55, 88);
@@ -71,6 +72,40 @@
       }
       .abtmebio{
         font-size: 23px;
+      }
+      .hover{
+        opacity: 1;
+        position: relative;
+        
+      }
+      .hover:hover .imgsize{
+        opacity: 0.3;
+      }
+      .hover:hover .button{
+        opacity: 1;
+      }
+      .links1:hover{
+        opacity: 1;
+      }
+      .links2:hover{
+        opacity: 1;
+      }
+      .button{
+        transition: 0.5s ease;
+        position: absolute;
+        bottom:50%;
+        left:25%;
+        opacity: 0;
+        
+      }
+      .links1, .links2{
+        opacity: 0.2;
+        font-size: 20px;
+        margin: 10px;
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+        padding: 15px;
       }
       @media screen and (max-width:1000px) {
         .form-container{

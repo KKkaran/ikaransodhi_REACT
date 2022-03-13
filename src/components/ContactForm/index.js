@@ -3,7 +3,7 @@ import React from "react";
 function DisplayContactForm(){
 
     return (
-        <div className="border border-dark p-3 m-2 text-center">
+        <div className="border border-dark m-2 text-center">
             <article class="contact-flex-container" id="contact">
             <h2>CONTACT ME</h2>
             <div></div>

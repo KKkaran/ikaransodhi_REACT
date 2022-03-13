@@ -13,8 +13,7 @@ function DisplayAbout(){
             variables. You'll get to practice new skills while 
             creating something that you'll use duyour job search. 
             It’s a win-win that you'll likelgrateful for in the future!You'll get to practice new skills while 
-            creating something that you'll use duyour job search. 
-            It’s a win-win that you'll likelgrateful for in the future!</p>
+            </p>
         </div>
     </div>
     )
